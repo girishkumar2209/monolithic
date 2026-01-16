@@ -23,3 +23,10 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "girish.bharathi.monobucket"
+key = "prod/terraform.tfstate"
+}
+}
